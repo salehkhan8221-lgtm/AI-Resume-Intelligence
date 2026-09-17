@@ -1,4 +1,13 @@
+import os
+import sys
 import streamlit as st
+
+ROOT_DIR = os.path.abspath(
+    os.path.join(os.path.dirname(__file__), "../../..")
+)
+
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
 
 from app.nlp.matching_engine import calculate_skill_match
 from app.nlp.skill_gap_analyzer import analyze_skill_gaps

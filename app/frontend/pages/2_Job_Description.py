@@ -59,10 +59,14 @@ if st.button("🔍 Analyze Job Description"):
 
         st.success("Job description analyzed successfully!")
 
+        
+
 
         st.markdown("---")
 
         st.subheader("🎯 Required Skills")
+
+        
 
 
         if job_skills:
